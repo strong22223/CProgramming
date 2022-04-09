@@ -1,0 +1,3 @@
+﻿  源.c
+D:\Programming\Program\LongInt\源.c(10,13): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  LongInt.vcxproj -> D:\Programming\Program\LongInt\x64\Debug\LongInt.exe
