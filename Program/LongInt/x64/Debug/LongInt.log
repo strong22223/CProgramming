@@ -1,3 +1,6 @@
 ﻿  源.c
-D:\Programming\Program\LongInt\源.c(10,13): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\Programming\Program\LongInt\源.c(13,13): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\Programming\Program\LongInt\源.c(17,19): warning C4133: “>=”: 从“int *”到“char *”的类型不兼容
+D:\Programming\Program\LongInt\源.c(11,1): warning C4133: “初始化”: 从“char *”到“int *”的类型不兼容
+D:\Programming\Program\LongInt\源.c(66,7): warning C4013: “exit”未定义；假设外部返回 int
   LongInt.vcxproj -> D:\Programming\Program\LongInt\x64\Debug\LongInt.exe
