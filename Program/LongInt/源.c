@@ -4,7 +4,10 @@
 
 #define  MAX  1000
  
-
+typedef struct s{
+	int a[MAX];
+	int flag; 
+}LongInt;
 
 _Bool swapInt(char* A,int * B ) {//处理输入的长整数。
 	int* begin_B = B;//测试输出
@@ -29,8 +32,8 @@ _Bool swapInt(char* A,int * B ) {//处理输入的长整数。
 	//检测输出！
 	//重新将B的位置给初始位置
 	B = begin_B;
-	for (int i = 1; i <=B[0]; i++)
-		printf("%d", B[i]);
+//	for (int i = 1; i <=B[0]; i++)
+	//	printf("%d", B[i]);
 	return 1;
 }
 //输入
@@ -65,6 +68,11 @@ int* Multiplicate(int* A, int num) {
 		printf("0");
 		exit(0);
 	}
+	if (A[1] == 0) {
+		printf("0");
+		exit(0);
+	}
+		
  //执行乘法，依照短的为基准来将短的数字作为基准乘
 	int mar[20][20] = { 0 };
 	memset(mar, 0, sizeof(mar));

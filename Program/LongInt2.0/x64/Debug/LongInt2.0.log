@@ -1,0 +1,6 @@
+﻿  源.c
+D:\Programming\Program\LongInt2.0\源.c(38,8): warning C4013: “exit”未定义；假设外部返回 int
+D:\Programming\Program\LongInt2.0\源.c(44,27): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\Programming\Program\LongInt2.0\源.c(46,39): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\Programming\Program\LongInt2.0\源.c(48,28): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  LongInt2.0.vcxproj -> D:\Programming\Program\LongInt2.0\x64\Debug\LongInt2.0.exe
