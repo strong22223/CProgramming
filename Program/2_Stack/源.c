@@ -8,14 +8,30 @@ typedef struct {
 	int top;
 }Stack;
 //出栈
-_Bool Pop(Stack *S) {
-	if (S->top <= -1) {
+_Bool Pop(Stack * S,int num) {
+
+		if (S->top <= -1) {
+			printf("此栈为空！\n");
+			return 0;
+		}
+		while (S->top >= 0&&num) {
+			printf("%d \n", S->data[S->top]);
+			S->top--;
+			num--;
+		}return 1;
+	}
+_Bool Popall(Stack *s) {
+	Stack S = *s;
+	if (S.top <= -1) {
+		printf("此栈为空！");
 		return 0;
 	}
-	while (S->top>=0) {
-		printf("%d ", S->data[S->top]);
-		S->top--;
-	}return 1;
+	while (S.top>=0) {
+		printf("%d ", S.data[S.top]);
+		S.top--;
+	}
+	printf("\n");
+	return 1;
 }
 
 //初始化栈,没有数据的时间，栈顶为-1.
@@ -24,8 +40,9 @@ void InitStack(Stack *S) {
 }
 
 //判断栈是否为空
-_Bool StackEmpty(Stack S) {
-	if (S.top == -1) {
+_Bool StackEmpty(Stack *S) {
+ 
+	if (S->top == -1) {
 		return 1;
 	}return 0;
 }
@@ -36,38 +53,53 @@ _Bool Push(Stack *S) {
 			return 0;
 	}
 	//多次
-	printf("入栈：请输入整数每个整数之间使用空格隔开,输入\"exit\"停止\n");
-	int nu;
-	while (scanf_s("%d", &nu)==1) {
-		S->top++;
-		S->data[S->top] = nu;
+	printf("入栈:\n");
+	int num;
+	if (scanf_s("%d", &num)) {
+	
+			S->top++;
+			S->data[S->top] = num;
+	}
+	else {
+		
+		printf("错误!\n");;
 	}
 	//操作后展示战中的元素
-	Pop(S);
+	Popall(S);
 
 	return 1;
 }
 
 
 //读取栈顶元素
-int GetTop(Stack *S) {
-	if (S->top <= -1) {
-		printf("错误！");
-		exit();
+int GetTop(Stack *s) {
+	Stack S = *s;
+	if (S.top <= -1) {
+		printf("错误！此栈为空！");
+		return TMP_MAX_S;
 	}
-	return S->data[S->top];
+	return S.data[S.top];
 }
 int main()
 {
 	Stack S;
-	//入栈
 	InitStack(&S);
-	Push(&S);
+	int flag;
+	while (1) {
+		printf("请输入你的操作：\n1.入栈\n2.出栈\n3.返回栈顶元素\n");
+		scanf_s("%d", &flag); getchar();
 
-	printf("返回栈顶元素:");
-	GetTop(&S);
+		switch (flag) {
+		case 1:Push(&S); break;
+		case 2: {int num; printf("请输入出栈的次数："); scanf_s("%d", &num); Pop(&S, num); }; break;
+		case  3: {	printf("返回栈顶元素:");		  printf("%d\n", GetTop(&S)); }; break;
+		default:break;
+		}
+	}
 
 
+ 
 
+ 
 	return 0;
 }

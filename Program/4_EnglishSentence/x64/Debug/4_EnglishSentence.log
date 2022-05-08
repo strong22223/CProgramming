@@ -1,0 +1,12 @@
+﻿  源.c
+D:\Programming\Program\4_EnglishSentence\源.c(37,21): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\Programming\Program\4_EnglishSentence\源.c(38,21): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\Programming\Program\4_EnglishSentence\源.c(55,19): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\Programming\Program\4_EnglishSentence\源.c(76,28): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+D:\Programming\Program\4_EnglishSentence\源.c(100,28): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+D:\Programming\Program\4_EnglishSentence\源.c(109,29): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+D:\Programming\Program\4_EnglishSentence\源.c(83,21): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\Programming\Program\4_EnglishSentence\源.c(84,21): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\Programming\Program\4_EnglishSentence\源.c(102,20): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\Programming\Program\4_EnglishSentence\源.c(112,20): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  4_EnglishSentence.vcxproj -> D:\Programming\Program\4_EnglishSentence\x64\Debug\4_EnglishSentence.exe

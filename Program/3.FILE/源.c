@@ -3,7 +3,7 @@
 #include<ctype.h>
 #include<string.h>
 #define MAXSIZE 1000
-//
+//将替换后的字符串转入到另外一个文件中
 FILE* getStr(FILE* S, char* str,char * replace) {
 	//创建并且打开文件
 	static FILE* another;
@@ -53,6 +53,7 @@ void num(FILE* fp) {
 	}
 
 	int  c = 'A';
+	printf("以下是每个字母出现的次数，不区分大小写：\n");
 	for (int i = 1; i <= 26; i++) {
 		printf("%c的个数是:", c);
 		c++;
