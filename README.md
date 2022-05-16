@@ -71,4 +71,9 @@ void BookReturn(char *rname, char* bname);
  void addBook(char * bname);
  void delBook(char * bname);
 ```
-# 2.读者的所有操作
+#### 2.读者的所有操作
+```C
+void borrowBook(char *bname);
+void returnBook(char *bname);
+void 
+```
