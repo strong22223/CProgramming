@@ -75,5 +75,5 @@ void BookReturn(char *rname, char* bname);
 ```C
 void borrowBook(char *bname);
 void returnBook(char *bname);
-void 
+
 ```
